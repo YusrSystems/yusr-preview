@@ -4,7 +4,16 @@ import {
   YusrSidBarProps,
   YusrSideBar,
 } from "@yusr_systems/ui";
-import { FaHome, FaInfo, FaCog, FaSignOutAlt, FaPercent } from "react-icons/fa";
+import {
+  Percent,
+  BusFrontIcon,
+  LayoutDashboardIcon,
+  MapPinnedIcon,
+  SettingsIcon,
+  ShieldCheck,
+  UserCogIcon,
+  UsersIcon,
+} from "lucide-react";
 
 const mockYusrSidBarProps: YusrSidBarProps = {
   logos: {
@@ -15,17 +24,29 @@ const mockYusrSidBarProps: YusrSidBarProps = {
   },
   navMain: [
     {
+      title: "لوحة التحكم",
+      url: "",
+      icon: <LayoutDashboardIcon />,
+      hasAuth: true,
+    },
+    {
+      title: "الحسابات",
+      url: "",
+      icon: <UsersIcon />,
+      hasAuth: true,
+    },
+    {
       title: "الضرائب",
-      url: "/taxes",
-      icon: <FaPercent />,
+      url: "",
+      icon: <Percent />,
       hasAuth: true,
     },
   ],
   navSecondary: [
     {
       title: "الإعدادات",
-      url: "/settings",
-      icon: <FaCog />,
+      url: "",
+      icon: <SettingsIcon />,
     },
   ],
 };
