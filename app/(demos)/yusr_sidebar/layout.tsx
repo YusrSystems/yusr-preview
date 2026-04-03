@@ -6,14 +6,11 @@ import {
 } from "@yusr_systems/ui";
 import {
   Percent,
-  BusFrontIcon,
   LayoutDashboardIcon,
-  MapPinnedIcon,
   SettingsIcon,
-  ShieldCheck,
-  UserCogIcon,
   UsersIcon,
 } from "lucide-react";
+import Link from "next/link";
 
 const mockYusrSidBarProps: YusrSidBarProps = {
   logos: {
@@ -49,6 +46,8 @@ const mockYusrSidBarProps: YusrSidBarProps = {
       icon: <SettingsIcon />,
     },
   ],
+
+  LinkComponent: Link,
 };
 
 export default function Layout({
